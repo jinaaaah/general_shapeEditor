@@ -7,15 +7,6 @@ class Shape implements Cloneable {
     protected Point offset;
     protected boolean isClicked = false;
 
-    public Point getPoint() {
-        return point;
-    }
-
-    public void setPoint(Point point) {
-        this.point = point;
-    }
-
-
     public Shape(Point point, int type) {
         this.point = point;
         this.type = type;
@@ -25,7 +16,12 @@ class Shape implements Cloneable {
         return type;
     }
 
-    public void draw(PApplet pApplet) {
+    public Point getPoint() {
+        return point;
+    }
+
+    public void setPoint(Point point) {
+        this.point = point;
     }
 
     public void setOffset(Point pivot) {
@@ -44,6 +40,9 @@ class Shape implements Cloneable {
 
     public void highlight(Boolean isClicked) {
         this.isClicked = isClicked;
+    }
+
+    public void draw(PApplet pApplet) {
     }
 
     @Override

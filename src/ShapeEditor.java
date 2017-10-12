@@ -11,15 +11,16 @@ public class ShapeEditor extends PApplet {
     private static final int CIRCLE = 2;
     private static final int TRIANGLE = 3;
 
-    private List<Shape> shapeList;
-    private Shape selectedShape;
-
-    private String shapeInfo = "";
-
     private boolean isCtrlPressed;
     private boolean isDPressed;
     private boolean isSPressed;
     private boolean isOPressed;
+
+    private List<Shape> shapeList;
+    private Shape selectedShape;
+    private Point selectedPoint;
+
+    private String shapeInfo = "";
 
     @Override
     public void keyPressed() {
@@ -49,6 +50,14 @@ public class ShapeEditor extends PApplet {
                 saveShapes();
             }
         }
+    }
+
+    @Override
+    public void keyReleased() {
+        isCtrlPressed = false;
+        isDPressed = false;
+        isSPressed = false;
+        isOPressed = false;
     }
 
     private void saveShapes() {
@@ -102,34 +111,26 @@ public class ShapeEditor extends PApplet {
         }
     }
 
-    @Override
-    public void keyReleased() {
-        isCtrlPressed = false;
-        isDPressed = false;
-        isSPressed = false;
-        isOPressed = false;
-    }
-
     private void duplicateShape() {
-        Point clickedPoint = new Point(mouseX, mouseY);
-        Shape checkShape = detectShape(clickedPoint);
+        selectedPoint = new Point(mouseX, mouseY);
+        selectedShape = detectShape(selectedPoint);
 
-        if (checkShape != null) {
-            Shape cloneShape = checkShape.clone();
-            cloneShape.setPoint(new Point(checkShape.getPoint().getX() + 30,
-                    checkShape.getPoint().getY() + 30));
+        if (selectedShape != null) {
+            Shape cloneShape = selectedShape.clone();
+            cloneShape.setPoint(new Point(selectedShape.getPoint().getX() + 30,
+                    selectedShape.getPoint().getY() + 30));
             shapeList.add(cloneShape);
         }
     }
 
-    private void addShape(Point clickedPoint) {
+    private void addShape() {
         Shape shape = null;
         if (key == '1') {
-            shape = new Rect(clickedPoint, RECTANGLE);
+            shape = new Rect(selectedPoint, RECTANGLE);
         } else if (key == '2') {
-            shape = new Circle(clickedPoint, CIRCLE);
+            shape = new Circle(selectedPoint, CIRCLE);
         } else if (key == '3') {
-            shape = new Triangle(clickedPoint, TRIANGLE);
+            shape = new Triangle(selectedPoint, TRIANGLE);
         }
 
         if (shape != null)
@@ -152,29 +153,24 @@ public class ShapeEditor extends PApplet {
 
     @Override
     public void mouseDragged() {
-        Point point = new Point(mouseX, mouseY);
-        if(selectedShape == null){
-            selectedShape = detectShape(point);
-        }
-
+        selectedPoint = new Point(mouseX, mouseY);
         if(selectedShape!=null){
-            selectedShape.maintainDistance(point);
+            selectedShape.maintainDistance(selectedPoint);
         }
-
     }
 
     @Override
     public void mousePressed() {
-        Point clickedPoint = new Point(mouseX, mouseY);
-        Shape clickedShape = detectShape(clickedPoint);
+        selectedPoint = new Point(mouseX, mouseY);
+        selectedShape = detectShape(selectedPoint);
         if (!keyPressed) {
-            if (clickedShape != null) {
-                clickedShape.highlight(true);
+            if (selectedShape != null) {
+                selectedShape.highlight(true);
             }
             return;
         }
 
-        addShape(clickedPoint);
+        addShape();
 
     }
 
@@ -192,7 +188,6 @@ public class ShapeEditor extends PApplet {
 
         for (Shape shape : shapeList) {
             shape.draw(this);
-
         }
     }
 

@@ -12,6 +12,7 @@ public class ShapeEditor extends PApplet {
     private static final int TRIANGLE = 3;
 
     private List<Shape> shapeList;
+    private Shape selectedShape;
 
     private String shapeInfo = "";
 
@@ -137,8 +138,9 @@ public class ShapeEditor extends PApplet {
     }
 
     public Shape detectShape(Point pressedPoint) {
-        for (Shape s : shapeList) {
-            if (s.checkCollision(pressedPoint)) {
+        for (int i = shapeList.size()-1; i >= 0; i--) {
+            if(shapeList.get(i).checkCollision(pressedPoint)){
+                Shape s = shapeList.get(i);
                 if (s.getOffset() == null) {
                     s.setOffset(pressedPoint);
                 }
@@ -151,9 +153,12 @@ public class ShapeEditor extends PApplet {
     @Override
     public void mouseDragged() {
         Point point = new Point(mouseX, mouseY);
-        Shape clickedShape = detectShape(point);
-        if (clickedShape != null) {
-            clickedShape.maintainDistance(point);
+        if(selectedShape == null){
+            selectedShape = detectShape(point);
+        }
+
+        if(selectedShape!=null){
+            selectedShape.maintainDistance(point);
         }
 
     }
@@ -175,11 +180,10 @@ public class ShapeEditor extends PApplet {
 
     @Override
     public void mouseReleased() {
-        Point clickedPoint = new Point(mouseX, mouseY);
-        Shape clickedShape = detectShape(clickedPoint);
-        if (clickedShape != null) {
-            clickedShape.highlight(false);
+        if (selectedShape != null) {
+            selectedShape.highlight(false);
         }
+        selectedShape = null;
     }
 
     @Override

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01832afe-8fa8-4470-b850-3dcbfde8b26d" name="Default" comment="" />
+    <list default="true" id="01832afe-8fa8-4470-b850-3dcbfde8b26d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShapeEditor.java" afterPath="$PROJECT_DIR$/src/ShapeEditor.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShapeEditor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShapeEditor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ShapeEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#keyPressed#0;class#ShapeEditor#0" expanded="false" />
@@ -26,12 +30,20 @@
                 <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
                 <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
                 <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-                <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
                 <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-                <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
                 <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
                 <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,7 +61,7 @@
       <file leaf-file-name="Shape.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
+            <state relative-caret-position="480">
               <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
               <folding>
                 <element signature="e#216#217#0" expanded="true" />
@@ -81,7 +93,9 @@
                 <element signature="e#204#205#0" expanded="true" />
                 <element signature="e#230#231#0" expanded="true" />
                 <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
                 <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,7 +114,7 @@
       <file leaf-file-name="Rect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="60">
               <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -109,17 +123,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding>
-                <element signature="e#112#113#0" expanded="true" />
-                <element signature="e#146#147#0" expanded="true" />
-                <element signature="e#1505#1506#0" expanded="true" />
-                <element signature="e#1546#1547#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,6 +142,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -143,12 +155,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/TriangleImpl.java" />
         <option value="$PROJECT_DIR$/src/shapeList.txt" />
-        <option value="$PROJECT_DIR$/src/ShapeEditor.java" />
         <option value="$PROJECT_DIR$/src/Shape.java" />
         <option value="$PROJECT_DIR$/src/Point.java" />
         <option value="$PROJECT_DIR$/src/Circle.java" />
         <option value="$PROJECT_DIR$/src/Rect.java" />
         <option value="$PROJECT_DIR$/src/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/ShapeEditor.java" />
       </list>
     </option>
   </component>
@@ -159,11 +171,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="120" />
+    <option name="x" value="642" />
     <option name="y" value="23" />
-    <option name="width" value="1312" />
+    <option name="width" value="790" />
     <option name="height" value="770" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -179,6 +192,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,10 +212,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,15 +359,16 @@
       <workItem from="1506332003759" duration="2406000" />
       <workItem from="1506698437522" duration="3901000" />
       <workItem from="1506750578309" duration="1241000" />
-      <workItem from="1507695427095" duration="28513000" />
+      <workItem from="1507695427095" duration="28767000" />
+      <workItem from="1507786726323" duration="606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47906000" />
+    <option name="totallyTimeSpent" value="48766000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="23" width="1312" height="770" extended-state="0" />
+    <frame x="642" y="23" width="790" height="770" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -365,19 +379,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19340974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.105945125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17594936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39971346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39971346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -412,9 +426,83 @@
             <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shapeList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="method#clone#0;class#Shape#0" expanded="false" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShapeEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#keyPressed#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#saveShapes#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#readList#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#getInfo#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
+            <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
           </folding>
@@ -431,7 +519,9 @@
             <element signature="e#204#205#0" expanded="true" />
             <element signature="e#230#231#0" expanded="true" />
             <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
             <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -480,12 +570,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -502,9 +587,7 @@
             <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
           </folding>
@@ -555,12 +638,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -577,9 +655,7 @@
             <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
           </folding>
@@ -630,12 +706,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -652,9 +723,7 @@
             <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
           </folding>
@@ -674,9 +743,7 @@
             <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
           </folding>
@@ -696,9 +763,7 @@
             <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
           </folding>
@@ -718,9 +783,7 @@
             <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
           </folding>
@@ -732,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="587" column="0" lean-forward="false" selection-start-line="587" selection-start-column="0" selection-end-line="587" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,11 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="883" column="0" lean-forward="false" selection-start-line="883" selection-start-column="0" selection-end-line="883" selection-end-column="0" />
-          <folding>
-            <element signature="e#28451#28452#0" expanded="true" />
-            <element signature="e#28486#28487#0" expanded="true" />
-            <element signature="e#28864#28865#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,21 +817,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="60">
           <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -799,7 +840,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="480">
           <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
           <folding>
             <element signature="e#216#217#0" expanded="true" />
@@ -819,10 +860,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ShapeEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#keyPressed#0;class#ShapeEditor#0" expanded="false" />
@@ -832,24 +906,9 @@
             <element signature="method#keyReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#duplicateShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#addShape#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#detectShape#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#mousePressed#0;class#ShapeEditor#0" expanded="false" />
-            <element signature="method#mouseReleased#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#draw#0;class#ShapeEditor#0" expanded="false" />
             <element signature="method#settings#0;class#ShapeEditor#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
           </folding>
         </state>
       </provider>

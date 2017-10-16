@@ -1,11 +1,15 @@
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import processing.core.PApplet;
 
 import java.io.*;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ShapeEditor extends PApplet {
-    private static final String FILE_PATH = "/Users/ijina/IdeaProjects/shapeEditor/src/shapeList.txt";
+    private static final String FILE_PATH = "/Users/ijina/IdeaProjects/shapeEditor/src/list.json";
 
     private static final int RECTANGLE = 1;
     private static final int CIRCLE = 2;
@@ -20,7 +24,7 @@ public class ShapeEditor extends PApplet {
     private Shape selectedShape;
     private Point selectedPoint;
 
-    private String shapeInfo = "";
+    Gson gson;
 
     @Override
     public void keyPressed() {
@@ -61,55 +65,44 @@ public class ShapeEditor extends PApplet {
     }
 
     private void saveShapes() {
-        String listInfo = "";
-        for (Shape s : shapeList) {
-            listInfo += s.getType() + ":" + s.getPoint().getX() + ":" + s.getPoint().getY() + ":"
-                    + "255:255:255:";
+
+        if (gson == null) {
+            gson = new GsonBuilder()
+                    .registerTypeHierarchyAdapter(Shape.class, new ShapeTypeAdapter())
+                    .create();
         }
         try (FileOutputStream fos = new FileOutputStream(FILE_PATH);
              BufferedOutputStream bos = new BufferedOutputStream(fos)) {
-            bos.write(listInfo.getBytes());
+            String json = gson.toJson(shapeList);
+            bos.write(json.getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     private void readList() {
+        if (gson == null) {
+            gson = new GsonBuilder()
+                    .registerTypeHierarchyAdapter(Shape.class, new ShapeTypeAdapter())
+                    .create();
+        }
         try (FileInputStream fis = new FileInputStream(FILE_PATH);
              BufferedInputStream bis = new BufferedInputStream(fis)) {
             int ch;
+            StringBuilder json = new StringBuilder();
             while ((ch = bis.read()) != -1) {
-                shapeInfo += (char) ch;
+                json.append((char) ch);
                 System.out.print((char) ch);
             }
-            getInfo();
+            Type type = new TypeToken<List<Shape>>() {
+            }.getType();
+            shapeList = gson.fromJson(json.toString(), type);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private void getInfo() {
-        String[] str = shapeInfo.split(":");
-        Shape s = null;
-
-        for (int i = 0; i < str.length; i += 6) {
-            int type = parseInt(str[i]);
-            Point point = new Point(parseInt(str[i + 1]), parseInt(str[i + 2]));
-
-            switch (type) {
-                case 1:
-                    s = new Rect(point, RECTANGLE);
-                    break;
-                case 2:
-                    s = new Circle(point, CIRCLE);
-                    break;
-                case 3:
-                    s = new Triangle(point, TRIANGLE);
-                    break;
-            }
-            shapeList.add(s);
-        }
-    }
 
     private void duplicateShape() {
         selectedPoint = new Point(mouseX, mouseY);
@@ -139,8 +132,8 @@ public class ShapeEditor extends PApplet {
     }
 
     public Shape detectShape(Point pressedPoint) {
-        for (int i = shapeList.size()-1; i >= 0; i--) {
-            if(shapeList.get(i).checkCollision(pressedPoint)){
+        for (int i = shapeList.size() - 1; i >= 0; i--) {
+            if (shapeList.get(i).checkCollision(pressedPoint)) {
                 Shape s = shapeList.get(i);
                 if (s.getOffset() == null) {
                     s.setOffset(pressedPoint);
@@ -154,7 +147,7 @@ public class ShapeEditor extends PApplet {
     @Override
     public void mouseDragged() {
         selectedPoint = new Point(mouseX, mouseY);
-        if(selectedShape!=null){
+        if (selectedShape != null) {
             selectedShape.maintainDistance(selectedPoint);
         }
     }
